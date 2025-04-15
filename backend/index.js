@@ -33,8 +33,8 @@ app.use(cookieParser());
 
 const corsOptions = {
   origin: [
-    "http://localhost:5173", // local
-    "https://careerconnect2-frontend.onrender.com", // deployed frontend
+    "http://localhost:5173",
+    "https://careerconnect2-frontend.onrender.com"
   ],
   credentials: true,
 };
