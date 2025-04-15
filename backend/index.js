@@ -32,11 +32,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 const corsOptions = {
-    origin: ["http://localhost:5173","https://careerconnect2-frontend.onrender.com"],
-    credentials: true,
+  origin: [
+    "http://localhost:5173", // local
+    "https://careerconnect2-frontend.onrender.com", // deployed frontend
+  ],
+  credentials: true,
 };
-
 app.use(cors(corsOptions));
+
 
 const PORT = process.env.PORT || 3000;
 
